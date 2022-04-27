@@ -14,7 +14,6 @@ const userSchema = new Schema(
             type: String,
             required: true,
             minlength: 6,
-            maxlength: 12,
             select: false
         },
         email: {
@@ -26,6 +25,10 @@ const userSchema = new Schema(
         },
         userName: {
             type: String,
+        },
+        token: {
+            type: String,
+            select: false
         }
     }, 
     {
